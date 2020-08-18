@@ -1,5 +1,6 @@
 package com.sonu.loginmvvm.data.network
 
+import com.sonu.loginmvvm.data.network.responses.AuthResponse
 import okhttp3.ResponseBody
 import retrofit2.Call
 import retrofit2.Response
@@ -16,7 +17,7 @@ interface MyApi {
     fun userLogin(
         @Field("email") email: String,
         @Field("password") password: String
-    ): Call<ResponseBody>
+    ): Response<AuthResponse>
 
     companion object {
         operator fun invoke(): MyApi {

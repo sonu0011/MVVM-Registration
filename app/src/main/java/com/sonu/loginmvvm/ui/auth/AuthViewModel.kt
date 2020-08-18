@@ -19,6 +19,6 @@ class AuthViewModel : ViewModel() {
         }
         //Succcess
         val loginResponse = UserRepository().userLogin(email!!, password!!)
-        authListener?.onSuccess(loginResponse)
+
     }
 }
