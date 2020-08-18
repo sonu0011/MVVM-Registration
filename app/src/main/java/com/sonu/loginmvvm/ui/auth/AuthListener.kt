@@ -1,9 +1,9 @@
 package com.sonu.loginmvvm.ui.auth
 
-import androidx.lifecycle.LiveData
+import com.sonu.loginmvvm.data.db.entities.User
 
 interface AuthListener {
     fun onStarted()
     fun onError(message: String)
-    fun onSuccess(response: LiveData<String>)
+    fun onSuccess(user: User)
 }

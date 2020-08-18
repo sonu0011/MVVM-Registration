@@ -14,7 +14,7 @@ interface MyApi {
 
     @FormUrlEncoded
     @POST("login")
-    fun userLogin(
+   suspend fun userLogin(
         @Field("email") email: String,
         @Field("password") password: String
     ): Response<AuthResponse>
