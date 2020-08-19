@@ -1,6 +1,6 @@
 package com.sonu.loginmvvm.data.network
 
-import com.sonu.loginmvvm.util.ApiException
+import com.sonu.loginmvvm.util.ApiExceptions
 import org.json.JSONException
 import org.json.JSONObject
 import retrofit2.Response
@@ -25,7 +25,7 @@ abstract class SafeApiRequest {
                 message.append("\n")
             }
             message.append("Error Code : " + response.code())
-            throw ApiException(message.toString())
+            throw ApiExceptions(message.toString())
         }
     }
 }

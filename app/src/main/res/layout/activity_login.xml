@@ -88,6 +88,7 @@
                 android:layout_centerHorizontal="true"
                 android:layout_marginTop="12dp"
                 android:gravity="center_horizontal"
+                android:onClick="@{viewmodel::gotoSignUpActivity}"
                 android:text="Don't have an account?\nSign Up Here"
                 android:textAlignment="center"
                 android:textAppearance="@style/TextAppearance.AppCompat.Large"
